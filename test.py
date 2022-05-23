@@ -2,17 +2,17 @@ from dijkstra import Graph
 
 adjgraph = Graph(3)
 
-adjgraph.addEdge(0, 1, 3)
-adjgraph.addEdge(0, 2, 5)
-adjgraph.addEdge(1, 2, 1)
+adjgraph.add_edge(0, 1, 3)
+adjgraph.add_edge(0, 2, 5)
+adjgraph.add_edge(1, 2, 1)
 
-adjgraph.printMatrix()
-adjgraph.allShortPaths(0)
+adjgraph.print_matrix()
+adjgraph.all_short_paths(0)
 
 ################################################
 
 adjgraph2 = Graph(9)
-adjgraph2.initGraph(
+adjgraph2.init_graph(
     [[0, 4, 0, 0, 0, 0, 0, 8, 0],
         [4, 0, 8, 0, 0, 0, 0, 11, 0],
         [0, 8, 0, 7, 0, 4, 0, 0, 2],
@@ -25,4 +25,4 @@ adjgraph2.initGraph(
         ]
 )
 
-adjgraph2.shortPath(0, 4)
+adjgraph2.short_path(0, 4)
